@@ -1,59 +1,64 @@
 import { useState, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
-  FaReact, FaJs, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaAws, FaDocker
+ FaJs, FaHtml5, FaCss3Alt,  FaGitAlt, FaGithub, 
 } from 'react-icons/fa';
 import {
-  SiTypescript, SiTailwindcss, SiNextdotjs, SiMongodb, SiPostgresql, SiExpress,
-  SiFramer, SiRedux, SiGraphql, SiFirebase, SiVercel
+  SiTypescript,  SiVercel
 } from 'react-icons/si';
+
+import {
+  FaJava, FaNetworkWired
+} from 'react-icons/fa';
+import {
+  SiAngular, SiBootstrap, SiSpringboot, SiMysql, SiThymeleaf,
+  SiJsonwebtokens, SiPostman, 
+} from 'react-icons/si';
+import { VscVscode } from 'react-icons/vsc';
+
 
 const SkillsSection = () => {
   const [hoveredSkill, setHoveredSkill] = useState<string | null>(null);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+const skillCategories = [
+  {
+    title: "Frontend",
+    color: "from-blue-500 to-purple-600",
+    skills: [
+      { name: "Angular", icon: SiAngular, level: 90, color: "#DD0031" },
+      { name: "TypeScript", icon: SiTypescript, level: 90, color: "#3178C6" },
+      { name: "JavaScript", icon: FaJs, level: 90, color: "#F7DF1E" },
+      { name: "Bootstrap", icon: SiBootstrap, level: 85, color: "#7952B3" },
+      { name: "HTML5", icon: FaHtml5, level: 95, color: "#E34F26" },
+      { name: "CSS3", icon: FaCss3Alt, level: 90, color: "#1572B6" }
+    ]
+  },
+  {
+    title: "Backend",
+    color: "from-green-500 to-teal-600",
+    skills: [
+      { name: "Java", icon: FaJava, level: 90, color: "#007396" },
+      { name: "Spring Boot", icon: SiSpringboot, level: 90, color: "#6DB33F" },
+      { name: "REST APIs", icon: FaNetworkWired, level: 85, color: "#f97316" },
+      { name: "Thymeleaf", icon: SiThymeleaf, level: 75, color: "#005f0f" },
+      { name: "MySQL", icon: SiMysql, level: 90, color: "#4479A1" },
+      { name: "JWT", icon: SiJsonwebtokens, level: 80, color: "#000000" }
+    ]
+  },
+  {
+    title: "Tools & DevOps",
+    color: "from-orange-500 to-red-600",
+    skills: [
+      { name: "Git", icon: FaGitAlt, level: 90, color: "#F05032" },
+      { name: "GitHub", icon: FaGithub, level: 90, color: "#181717" },
+      { name: "Postman", icon: SiPostman, level: 85, color: "#FF6C37" },
+      { name: "Vercel", icon: SiVercel, level: 85, color: "#000000" },
+      { name: "VS Code", icon:  VscVscode, level: 90, color: "#007ACC" }
+    ]
+  }
+];
 
-  const skillCategories = [
-    {
-      title: "Frontend",
-      color: "from-blue-500 to-purple-600",
-      skills: [
-        { name: "React", icon: FaReact, level: 95, color: "#61DAFB" },
-        { name: "TypeScript", icon: SiTypescript, level: 90, color: "#3178C6" },
-        { name: "JavaScript", icon: FaJs, level: 95, color: "#F7DF1E" },
-        { name: "Next.js", icon: SiNextdotjs, level: 85, color: "#000000" },
-        { name: "Tailwind CSS", icon: SiTailwindcss, level: 90, color: "#06B6D4" },
-        { name: "Framer Motion", icon: SiFramer, level: 80, color: "#0055FF" },
-        { name: "Redux", icon: SiRedux, level: 85, color: "#764ABC" },
-        { name: "HTML5", icon: FaHtml5, level: 95, color: "#E34F26" },
-        { name: "CSS3", icon: FaCss3Alt, level: 90, color: "#1572B6" }
-      ]
-    },
-    {
-      title: "Backend",
-      color: "from-green-500 to-teal-600",
-      skills: [
-        { name: "Node.js", icon: FaNodeJs, level: 88, color: "#339933" },
-        { name: "Express", icon: SiExpress, level: 85, color: "#000000" },
-        { name: "Python", icon: FaPython, level: 80, color: "#3776AB" },
-        { name: "GraphQL", icon: SiGraphql, level: 75, color: "#E10098" },
-        { name: "MongoDB", icon: SiMongodb, level: 85, color: "#47A248" },
-        { name: "PostgreSQL", icon: SiPostgresql, level: 80, color: "#336791" },
-        { name: "Firebase", icon: SiFirebase, level: 78, color: "#FFCA28" }
-      ]
-    },
-    {
-      title: "Tools & DevOps",
-      color: "from-orange-500 to-red-600",
-      skills: [
-        { name: "Git", icon: FaGitAlt, level: 90, color: "#F05032" },
-        { name: "GitHub", icon: FaGithub, level: 90, color: "#181717" },
-        { name: "Docker", icon: FaDocker, level: 75, color: "#2496ED" },
-        { name: "AWS", icon: FaAws, level: 70, color: "#FF9900" },
-        { name: "Vercel", icon: SiVercel, level: 85, color: "#000000" }
-      ]
-    }
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
