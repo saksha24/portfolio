@@ -38,17 +38,13 @@ const AboutMe = () => {
   ];
 
   const skills = [
-    "React.js & Next.js",
     "Angular",
     "TypeScript",
-    "Node.js",
     "Java",
     "HTML & CSS",
     "Tailwind CSS",
-    "MongoDB & PostgreSQL",
     "REST & API Integration",
     "Git & GitHub",
-    "UI/UX Design Thinking",
   ];
 
   return (
@@ -154,20 +150,14 @@ const AboutMe = () => {
                     </h3>
                   </div>
 
-                  <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-                    I’m a software engineer driven by curiosity and a constant
-                    urge to create. Blending design thinking with engineering
-                    precision, I build web experiences that are not just
-                    functional — but intentional.
-                  </p>
+                 <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+  I’m a frontend-focused full stack developer passionate about crafting clean, scalable, and user-centered web applications. With a foundation in Angular, Java, and modern tooling, I turn ideas into functional experiences with precision and intent.
+</p>
 
-                  <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
-                    To me, every line of code is a step toward better solutions.
-                    I thrive in fast-paced environments where challenges spark
-                    innovation, and learning never stops. Whether it’s
-                    architecting frontend flows or optimizing backend systems, I
-                    bring clarity, craft, and commitment to every project.
-                  </p>
+<p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
+  Whether it’s designing responsive UI with Bootstrap or building robust APIs using Spring Boot, I enjoy solving complex challenges and delivering elegant code. I'm always learning, iterating, and pushing myself toward deeper technical understanding and creative growth.
+</p>
+
 
                   <div className="pt-4">
                     <div className="flex items-center gap-3 mb-4">
