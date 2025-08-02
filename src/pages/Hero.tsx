@@ -76,7 +76,7 @@ const Hero = () => {
               className="text-xl font-semibold text-gray-700 dark:text-white/80 mt-4"
               variants={itemVariants}
             >
-              Full Stack Developer
+              Java Full Stack Developer
             </motion.h2>
 
             <motion.p
