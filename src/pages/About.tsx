@@ -151,7 +151,7 @@ const AboutMe = () => {
                   </div>
 
                  <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-  I’m a frontend-focused full stack developer passionate about crafting clean, scalable, and user-centered web applications. With a foundation in Angular, Java, and modern tooling, I turn ideas into functional experiences with precision and intent.
+  I’m a Java full stack developer passionate about crafting clean, scalable, and user-centered web applications. With a foundation in Angular, Java, and modern tooling, I turn ideas into functional experiences with precision and intent.
 </p>
 
 <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed mt-4">
