@@ -6,7 +6,6 @@ import {
   FiMapPin,
   FiLinkedin,
   FiGithub,
-  FiTwitter,
   FiSend,
   FiUser,
   FiMessageSquare,
