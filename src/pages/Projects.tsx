@@ -25,39 +25,29 @@ const projects = [
     demo: "https://your-portfolio.vercel.app",
   },
   {
-    title: "Mass Marketing System",
+    title: "Notes Management System",
     description:
-      "A marketing automation tool developed for Verizon to manage high-volume outreach campaigns. Designed with performance and scalability in mind using Angular and Node.js.",
-    tech: ["Angular", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourusername/mass-marketing", // replace with actual
-    demo: "https://verizon-mass-marketing.vercel.app", // optional
+      "A full-stack application to manage, create, and organize notes securely access and CRUD functionality.",
+    tech: ["Angular", "Spring Boot", "MySQL"],
+    github: "https://github.com/yourusername/notes-management",
+    demo: "",
   },
   {
-    title: "Vehicle eMarketplace",
+    title: "Workflow Application",
     description:
-      "An online marketplace for vehicle listings with powerful UI and advanced filtering. Focused on delivering a seamless experience for both buyers and sellers.",
-    tech: ["Angular", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/yourusername/vehicle-marketplace", // replace with actual
-    demo: "https://vehicle-marketplace.vercel.app", // optional
+      "A workflow management system that helps add employee, employee information, update employee details, delete employee, shows activity status across different projects and stages.",
+    tech: ["Angular", "Spring Boot", "MySQL"],
+    github: "https://github.com/yourusername/workflow-app",
+    demo: "",
   },
    {
-    title: "AM Admin Panel",
+    title: "Naukri Clone Application",
     description:
-      "A scalable and intuitive admin dashboard for managing blogs and job listings with role-based access. Built using modern technologies and focused on performance, accessibility, and clean design.",
-    tech: [
-      "React",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Radix UI",
-      "Tiptap",
-      "TanStack Table",
-      "Axios",
-    ],
-    github: "https://github.com/yourusername/am-admin-panel", // replace with actual
-    demo: "https://am-admin-panel.vercel.app", // optional demo link
-  },
+      "A job portal platform inspired by Naukri.com, enabling users to search and apply for jobs, with recruiter and candidate dashboards.",
+    tech: ["Angular", "Spring Boot", "MySQL"],
+    github: "https://github.com/yourusername/naukri-clone",
+    demo: "",
+   },
 ];
 
 
