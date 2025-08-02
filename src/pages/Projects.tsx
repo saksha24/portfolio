@@ -6,23 +6,62 @@ import {
   FiZap
 } from 'react-icons/fi';
 import {
-  SiAngular,
-  SiSpringboot,
-  SiMysql,
   SiReact,
   SiTailwindcss,
   SiNextdotjs,
   SiTypescript,
   SiNodedotjs,
   SiMongodb,
-  SiPostgresql,
+  SiPostgresql
 } from 'react-icons/si';
 
-// Updated tech icons mapping
+const projects = [
+  {
+    title: "Portfolio Website",
+    description:
+      "A modern developer portfolio built with React, Tailwind CSS, and Framer Motion. Supports theme switching, responsive layout, and 3D elements using @react-three/fiber.",
+    tech: ["React", "Tailwind CSS", "Framer Motion", "Three.js"],
+    github: "https://github.com/yourusername/portfolio",
+    demo: "https://your-portfolio.vercel.app",
+  },
+  {
+    title: "Mass Marketing System",
+    description:
+      "A marketing automation tool developed for Verizon to manage high-volume outreach campaigns. Designed with performance and scalability in mind using Angular and Node.js.",
+    tech: ["Angular", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/yourusername/mass-marketing", // replace with actual
+    demo: "https://verizon-mass-marketing.vercel.app", // optional
+  },
+  {
+    title: "Vehicle eMarketplace",
+    description:
+      "An online marketplace for vehicle listings with powerful UI and advanced filtering. Focused on delivering a seamless experience for both buyers and sellers.",
+    tech: ["Angular", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/yourusername/vehicle-marketplace", // replace with actual
+    demo: "https://vehicle-marketplace.vercel.app", // optional
+  },
+   {
+    title: "AM Admin Panel",
+    description:
+      "A scalable and intuitive admin dashboard for managing blogs and job listings with role-based access. Built using modern technologies and focused on performance, accessibility, and clean design.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Radix UI",
+      "Tiptap",
+      "TanStack Table",
+      "Axios",
+    ],
+    github: "https://github.com/yourusername/am-admin-panel", // replace with actual
+    demo: "https://am-admin-panel.vercel.app", // optional demo link
+  },
+];
+
+
 const techIcons: any = {
-  'Angular': SiAngular,
-  'Spring Boot': SiSpringboot,
-  'MySQL': SiMysql,
   'React': SiReact,
   'Next.js': SiNextdotjs,
   'TypeScript': SiTypescript,
@@ -32,42 +71,6 @@ const techIcons: any = {
   'MongoDB': SiMongodb,
   'PostgreSQL': SiPostgresql,
 };
-
-// Your real projects
-const projects = [
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website to showcase projects, skills, and resume, built using Angular for frontend and Spring Boot for the backend.",
-    tech: ["Angular", "Spring Boot", "MySQL"],
-    github: "https://github.com/yourusername/portfolio", // update with your repo
-    demo: "https://your-portfolio-domain.com", // optional
-  },
-  {
-    title: "Notes Management System",
-    description:
-      "A full-stack application to manage, create, and organize notes securely with role-based access and CRUD functionality.",
-    tech: ["Angular", "Spring Boot", "MySQL"],
-    github: "https://github.com/yourusername/notes-management", // update with your repo
-    demo: "", // optional
-  },
-  {
-    title: "Workflow Application",
-    description:
-      "A workflow management system that helps track tasks, progress, and team coordination across different projects and stages.",
-    tech: ["Angular", "Spring Boot", "MySQL"],
-    github: "https://github.com/yourusername/workflow-app", // update with your repo
-    demo: "", // optional
-  },
-  {
-    title: "Naukri Clone Application",
-    description:
-      "A job portal platform inspired by Naukri.com, enabling users to search and apply for jobs, with recruiter and candidate dashboards.",
-    tech: ["Angular", "Spring Boot", "MySQL"],
-    github: "https://github.com/yourusername/naukri-clone", // update with your repo
-    demo: "", // optional
-  },
-];
 
 const categoryIcons = [FiCode, FiLayers, FiZap];
 
