@@ -30,17 +30,45 @@ const ContactPage = () => {
   };
 
   const contactInfo = [
-    { id: 1, icon: FiMail, title: 'Email', value: 'hello@yourname.com', description: 'Drop me a line anytime', color: 'from-blue-500 to-cyan-500' },
-    { id: 2, icon: FiPhone, title: 'Phone', value: '+1 (555) 123-4567', description:
-"Let's have a conversation", color: 'from-green-500 to-emerald-500' },
-    { id: 3, icon: FiMapPin, title: 'Location', value: 'New York, NY', description: 'Available for remote work', color: 'from-purple-500 to-pink-500' }
-  ];
+  {
+    id: 1,
+    icon: FiMail,
+    title: 'Email',
+    value: 'sakshishinde2875@gmail.com',
+    description: 'Drop me a line anytime',
+    color: 'from-blue-500 to-cyan-500'
+  },
+  {
+    id: 2,
+    icon: FiPhone,
+    title: 'Phone',
+    value: '8766779400',
+    description: "Let's have a conversation",
+    color: 'from-green-500 to-emerald-500'
+  },
+  {
+    id: 3,
+    icon: FiMapPin,
+    title: 'Location',
+    value: 'Pune, Maharashtra',
+    description: 'Available for remote work',
+    color: 'from-purple-500 to-pink-500'
+  }
+];
 
   const socialLinks = [
-    { icon: FiLinkedin, href: 'https://www.linkedin.com/in/ajay-shinde-a2408a1ba', color: 'hover:text-blue-600 dark:hover:text-blue-400' },
-    { icon: FiGithub, href: 'https://github.com/ajay-devhub', color: 'hover:text-gray-800 dark:hover:text-white' },
-    { icon: FiTwitter, href: '/', color: 'hover:text-sky-500 dark:hover:text-sky-400' }
-  ];
+  {
+    icon: FiLinkedin,
+    href: 'https://www.linkedin.com/in/sakshi-shinde-268316301/',
+    color: 'hover:text-blue-600 dark:hover:text-blue-400'
+  },
+  {
+    icon: FiGithub,
+    href: 'https://github.com/saksha24',
+    color: 'hover:text-gray-800 dark:hover:text-white'
+  }
+];
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
